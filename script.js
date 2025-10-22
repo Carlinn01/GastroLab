@@ -385,4 +385,23 @@ featureCards.forEach((card) => {
   featureObserver.observe(card)
 })
 
+function sendWhatsApp(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    // número do WhatsApp (coloque o DDD e número completo)
+    const numero = '+555194530318';
+
+    // texto formatado
+    const texto = ` *Novo Contato pelo Site*%0A%0A*Nome:* ${nome}%0A*E-mail:* ${email}%0A*Mensagem:* ${mensagem}`;
+
+    // redireciona pro WhatsApp
+    window.open(`https://wa.me/${numero}?text=${texto}`, '_blank');
+  }
+
+
+
 console.log("[v0] Gastrolab landing page initialized successfully")

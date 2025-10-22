@@ -266,6 +266,7 @@ body {
 
 .btn {
   display: inline-flex;
+  width: 200px;
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
