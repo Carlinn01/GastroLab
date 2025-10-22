@@ -644,13 +644,14 @@ section {
 }
 
 .service-card h3 {
-  color: var(--white);
+  color: #d4af37;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .service-card > p {
   color: var(--gray-400);
+  font-size: 18px;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -677,6 +678,41 @@ section {
 
 .services-cta {
   text-align: center;
+}
+
+.projects-grid .service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  min-height: 340px; /* altura um pouco maior para acomodar as logos */
+  padding: 2rem 1rem;
+}
+
+/* Logos maiores, mantendo proporção e centralização */
+.client-logo {
+  width: 150px;        /* aumentei de 100px para 150px */
+  height: 120px;       /* define uma altura proporcional */
+  object-fit: contain; /* garante que a imagem não distorça */
+  margin-bottom: 1.5rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Garante alinhamento visual do texto */
+.projects-grid .service-card h3 {
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+
+.projects-grid .service-card p {
+  margin-bottom: 0;
 }
 
 /* Team Section */
@@ -1169,7 +1205,7 @@ section {
 }
 
 .client-logo {
-  width: 80px;
+  width: 220px;
   height: auto;
   margin-bottom: 1rem;
   display: block;
@@ -1184,6 +1220,8 @@ section {
 }
 
 /* Grid exclusivo para a seção de Projetos */
+
+
 .projects-grid {
   grid-template-columns: repeat(3, 1fr);
   max-width: 1280px;
