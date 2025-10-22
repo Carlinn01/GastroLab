@@ -954,6 +954,8 @@ section {
   color: var(--gray-300);
 }
 
+
+
 /* Contact Section */
 .contact {
   background: var(--navy);
@@ -1165,6 +1167,40 @@ section {
   border-top: 1px solid rgba(212, 175, 55, 0.1);
   color: var(--gray-500);
 }
+
+.client-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+}
+
+/* Grid exclusivo para a seção de Projetos */
+.projects-grid {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1280px;
+}
+
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* Animations */
 @keyframes fadeInUp {
