@@ -1,6 +1,5 @@
-// Navbar scroll effect
 window.addEventListener("scroll", () => {
-  const navbar = document.getElementById("nav") // Fix navbar ID reference
+  const navbar = document.getElementById("nav")
   if (window.scrollY > 50) {
     navbar.classList.add("scrolled")
   } else {
@@ -8,14 +7,12 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Mobile menu toggle
 const navToggle = document.getElementById("navToggle")
 const navMenu = document.getElementById("navMenu")
 
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active")
 
-  // Animate hamburger icon
   const spans = navToggle.querySelectorAll("span")
   if (navMenu.classList.contains("active")) {
     spans[0].style.transform = "rotate(45deg) translate(5px, 5px)"
@@ -28,7 +25,6 @@ navToggle.addEventListener("click", () => {
   }
 })
 
-// Close mobile menu when clicking on a link
 const navLinks = document.querySelectorAll(".nav-link")
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
@@ -40,7 +36,6 @@ navLinks.forEach((link) => {
   })
 })
 
-// Smooth scroll with offset for fixed navbar
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -55,7 +50,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Intersection Observer for fade-in animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -100px 0px",
@@ -70,7 +64,6 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Observe sections for animation
 document.querySelectorAll("section").forEach((section) => {
   section.style.opacity = "0"
   section.style.transform = "translateY(30px)"
@@ -78,7 +71,7 @@ document.querySelectorAll("section").forEach((section) => {
   observer.observe(section)
 })
 
-// Parallax effect for hero section
+
 window.addEventListener("scroll", () => {
   const hero = document.querySelector(".hero")
   const scrolled = window.pageYOffset
@@ -97,7 +90,6 @@ function createHeroChart() {
 
   ctx.scale(2, 2)
 
-  // Data points for the chart
   const data = [
     { x: 0, revenue: 30, efficiency: 25 },
     { x: 1, revenue: 35, efficiency: 30 },
@@ -113,7 +105,6 @@ function createHeroChart() {
   const chartHeight = height / 2 - padding * 2
   const maxValue = 100
 
-  // Draw grid lines
   ctx.strokeStyle = "rgba(212, 175, 55, 0.1)"
   ctx.lineWidth = 1
   for (let i = 0; i <= 4; i++) {
@@ -124,7 +115,6 @@ function createHeroChart() {
     ctx.stroke()
   }
 
-  // Draw revenue line (gold)
   ctx.strokeStyle = "#d4af37"
   ctx.lineWidth = 3
   ctx.beginPath()
@@ -139,7 +129,6 @@ function createHeroChart() {
   })
   ctx.stroke()
 
-  // Draw revenue area fill
   ctx.fillStyle = "rgba(212, 175, 55, 0.1)"
   ctx.beginPath()
   data.forEach((point, index) => {
@@ -156,7 +145,6 @@ function createHeroChart() {
   ctx.closePath()
   ctx.fill()
 
-  // Draw efficiency line (blue)
   ctx.strokeStyle = "#60a5fa"
   ctx.lineWidth = 3
   ctx.beginPath()
@@ -171,19 +159,16 @@ function createHeroChart() {
   })
   ctx.stroke()
 
-  // Draw data points
   data.forEach((point) => {
     const x = padding + (chartWidth / (data.length - 1)) * point.x
     const yRevenue = padding + chartHeight - (point.revenue / maxValue) * chartHeight
     const yEfficiency = padding + chartHeight - (point.efficiency / maxValue) * chartHeight
 
-    // Revenue point
     ctx.fillStyle = "#d4af37"
     ctx.beginPath()
     ctx.arc(x, yRevenue, 4, 0, Math.PI * 2)
     ctx.fill()
 
-    // Efficiency point
     ctx.fillStyle = "#60a5fa"
     ctx.beginPath()
     ctx.arc(x, yEfficiency, 4, 0, Math.PI * 2)
@@ -191,37 +176,10 @@ function createHeroChart() {
   })
 }
 
-// Initialize chart when page loads
 window.addEventListener("load", createHeroChart)
 window.addEventListener("resize", createHeroChart)
 
-const contactForm = document.getElementById("contactForm")
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault()
 
-    // Get form data
-    const formData = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      phone: document.getElementById("phone").value,
-      business: document.getElementById("business").value,
-      message: document.getElementById("message").value,
-    }
-
-    // Create WhatsApp message
-    const whatsappMessage = `*Nova Solicitação de Contato - Gastrolab*%0A%0A*Nome:* ${formData.name}%0A*Email:* ${formData.email}%0A*Telefone:* ${formData.phone}%0A*Tipo de Negócio:* ${formData.business}%0A*Mensagem:* ${formData.message}`
-
-    // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/5551994530318?text=${whatsappMessage}`, "_blank")
-
-    // Show success message
-    alert("Obrigado pelo contato! Você será redirecionado para o WhatsApp.")
-
-    // Reset form
-    contactForm.reset()
-  })
-}
 
 function animateCounter(element, target, duration = 2000) {
   const start = 0
@@ -239,7 +197,6 @@ function animateCounter(element, target, duration = 2000) {
   }, 16)
 }
 
-// Animate stats when they come into view
 const statsObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -253,7 +210,6 @@ const statsObserver = new IntersectionObserver(
             stat.textContent = "0"
             setTimeout(() => {
               animateCounter(stat, number, 2000)
-              // Add back the suffix
               setTimeout(() => {
                 if (text.includes("+")) {
                   stat.textContent = number + "+"
@@ -323,7 +279,6 @@ ctaButtons.forEach((button) => {
   }, 5000)
 })
 
-// Add pulse animation to CSS dynamically
 const style = document.createElement("style")
 style.textContent = `
     @keyframes pulse {
@@ -392,16 +347,12 @@ function sendWhatsApp(event) {
     const email = document.getElementById('email').value;
     const mensagem = document.getElementById('mensagem').value;
 
-    // número do WhatsApp (coloque o DDD e número completo)
     const numero = '+555194530318';
 
-    // texto formatado
     const texto = ` *Novo Contato pelo Site*%0A%0A*Nome:* ${nome}%0A*E-mail:* ${email}%0A*Mensagem:* ${mensagem}`;
 
-    // redireciona pro WhatsApp
     window.open(`https://wa.me/${numero}?text=${texto}`, '_blank');
   }
 
 
 
-console.log("[v0] Gastrolab landing page initialized successfully")
