@@ -1075,12 +1075,26 @@ section {
 }
 
 .btn-whatsapp {
+  font-size: 20px;
+  background: #25d366;
+  color: white;
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-mensagem {
   font-size: 14px;
   background: #25d366;
   color: white;
   width: 30%;
   justify-content: center;
   text-align: center;
+}
+
+.btn-mensagem:hover {
+  background: #20ba5a;
+  transform: translateY(-2px);
 }
 
 .btn-whatsapp:hover {
