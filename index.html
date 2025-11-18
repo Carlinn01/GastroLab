@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gastrolab - Transforme Dados em Resultados para seu Restaurante</title>
+  <meta name="description"
+    content="Consultoria especializada em gestão gastronômica com foco em dados, operação e crescimento. Aumente sua receita com inteligência de negócios.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="img/logo2.png" alt="Gastrolab Logo" class="logo-img">
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Início</a>
+        <a href="#team" class="nav-link">Equipe</a>
+        <a href="#services" class="nav-link">Soluções</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#testimonials" class="nav-link">Depoimentos</a>
+        <a href="#contact" class="nav-link nav-cta">Fale Conosco</a>
+      </div>
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background"></div>
+
+    <div class="hero-content container">
+
+      <!-- NOVO BLOCO FLEX -->
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Bem <span class="highlight">Vindo A<br></span>
+            <span class="highlight-gold">GastroLab</span><br>
+          </h1>
+
+          <p class="hero-subtitle">
+            Somos uma equipe de especialistas apaixonados por culinária e com um profundo conhecimento em gestão,
+            marketing e operação.
+            Nossa missão é guiar você por cada etapa do processo, desde a concepção de uma ideia até a otimização de um
+            negócio já estabelecido.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              Agendar Consultoria
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="https://wa.me/5551994530318" target="_blank" class="btn btn-whatsapp">Falar no WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="banner-img">
+          <img src="img/banner2.png" alt="Banner">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Nossa Equipe</span>
+        <h2 class="section-title">Especialistas com <span class="highlight-gold">Décadas de Experiência</span></h2>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="img/Gustavo.jpg" alt="Gustavo Bonfiglio">
+            <div class="member-overlay">
+            </div>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Gustavo Bonfiglio</h3>
+            <p class="member-role">Fundador & Especialista em Operações</p>
+            <p class="member-bio">
+              Gestor de alimentos e bebidas, chef de cozinha e sommelier, com mais de 10 anos de experiência em
+              restaurantes, hotéis e cervejarias.
+              Chef - Sommelier
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="team-member">
+          <div class="member-image">
+            <img src="img/SnapInsta.to_491451652_1420282629385810_8293435617854959218_n.jpg"
+              alt="Luiz Felipe Bonfiglio">
+            <div class="member-overlay">
+            </div>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Luiz Felipe Bonfiglio</h3>
+            <p class="member-role">Co-Fundador & Especialista em Gestão</p>
+            <p class="member-bio">
+              Profissional com mais de três décadas de experiência e um histórico comprovado em gestão operacional e
+              aumento de vendas.
+              Comercial
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-bar" aria-hidden="true">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:1rem; color:var(--gray-300); font-weight:600;">Por que escolher a
+        Gastrolab?</div>
+      <div class="trust-items">
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+              fill="#d4af37" />
+          </svg>
+          <span>Consultoria Personalizada</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Visão 360° do negócio</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#d4af37" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 17L12 22L22 17" stroke="#d4af37" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span>Resultados concretos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Nossas Soluções</span>
+        <h2 class="section-title">Soluções Completas para <span class="highlight-gold">Cada Etapa</span> do seu Negócio
+        </h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <span class="feature-number">01</span>
+          </div>
+          <h3>Implantação de Restaurantes</h3>
+          <ul class="service-list">
+            <li>Layout de cozinha e áreas</li>
+            <li>Definição de cardápio e fichas técnicas</li>
+            <li>Precificação e engenharia de cardápio</li>
+            <li>Planejamento de equipe e operação</li>
+            <li>Manuais operacionais e treinamentos iniciais</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <span class="feature-number">02</span>
+          </div>
+          <h3>Reformulação de Negócios Existentes</h3>
+          <ul class="service-list">
+            <li>Diagnóstico completo</li>
+            <li>Redesenho de operação e processos</li>
+            <li>Novo posicionamento e identidade</li>
+            <li>Cardápio atualizado e simplificado</li>
+            <li>Formação de times e lideranças</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <span class="feature-number">03</span>
+          </div>
+          <h3>Planejamento de Eventos Gastronômicos</h3>
+          <ul class="service-list">
+            <li>Festivais e eventos de médio e grande porte</li>
+            <li>Consultoria e Curadoria de Evento Gastronômico</li>
+            <li>Gestão de Operações e Produção</li>
+            <li>Cardápio e Experiência Gastronômica</li>
+            <li>Execução Técnica e Supervisão In Loco</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <span class="feature-number">04</span>
+          </div>
+          <h3>Materiais Técnicos e Gerenciais</h3>
+          <ul class="service-list">
+            <li>Fichas técnicas — incluindo rendimento e CMV</li>
+            <li>Planilhas de precificação e controle</li>
+            <li>Cardápios impressos e digitais</li>
+            <li>Manual de produção / Manual de atendimento</li>
+            <li>Rotulagem e tabelas nutricionais</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="services" id="projects">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Projetos & Clientes</span>
+        <h2 class="section-title">Parcerias que Transformam Negócios na Prática</h2>
+      </div>
+
+      <div class="services-grid projects-grid">
+        <!-- Card 1 -->
+        <div class="service-card">
+          <img src="img/908cozinhafuncinal.jpeg" alt="Logo Cliente 1" class="client-logo">
+          <h3>908 Cozinha Funcional</h3>
+          <p><strong>Serviços:</strong> Estratégia · Produto · Operação</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+          <img src="img/altezzacafe.jpeg" alt="Logo Cliente 2" class="client-logo">
+          <h3>Altezza Café</h3>
+          <p><strong>Serviços:</strong> Estratégia · Operação · Gente</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+          <img src="img/bacco2.jpeg" alt="Logo Cliente 3" class="client-logo">
+          <h3>Bacco Wine Heaven</h3>
+          <p><strong>Serviços:</strong> Estratégia · Financeiro · Operação · Produto · Gente</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card">
+          <img src="img/meritoitalianologo.png" alt="Logo Cliente 4" class="client-logo">
+          <h3>Café Mérito Italiano</h3>
+          <p><strong>Serviços:</strong> Estratégia · Financeiro · Produto</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card">
+          <img src="img/cattivali.png" alt="Logo Cliente 5" class="client-logo">
+          <h3>Catti Valli Pescados</h3>
+          <p><strong>Serviços:</strong>Estratégia · Financeiro · Operação · Produto · Gente</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card">
+          <img src="img/cervejaria blumenau.jpeg" alt="Logo Cliente 6" class="client-logo">
+          <h3>Cervejaria Blumenau</h3>
+          <p><strong>Serviços:</strong> Produto</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="service-card">
+          <img src="img/comidinhasdaterra.jpeg" alt="Logo Cliente 7" class="client-logo">
+          <h3>Comidinhas da Terra</h3>
+          <p><strong>Serviços:</strong>Estratégia · Financeiro · Operação · Produto · Gente</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="service-card">
+          <img src="img/dipaolo.jpeg" alt="Logo Cliente 8" class="client-logo">
+          <h3>Di Paolo</h3>
+          <p><strong>Serviços:</strong> Gente</p>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="service-card">
+          <img src="img/duftebiergartes.jpeg" alt="Logo Cliente 9" class="client-logo">
+          <h3>Dufte Biergarten</h3>
+          <p><strong>Serviços:</strong> Estratégia · Financeiro · Operação · Produto · Gente</p>
+        </div>
+      </div>
+
+      <div class="services-cta" style="margin-top:1.25rem;">
+        <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Depoimentos</span>
+        <h2 class="section-title">O Que Nossos <span class="highlight-gold">Parceiros</span> Dizem</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+          </div>
+
+          <p class="testimonial-text">O trabalho da GastroLab teve um impacto
+            positivo, com fichas técnicas melhorando o
+            controle, tornando o cardápio mais atrativo e
+            aumentando a confiança da equipe após os
+            treinamentos. — Diego Giovanaz
+          </p>
+
+          <div class="testimonial-author">
+            <img src="img/cattivali.png" alt="Larissa Mello">
+            <div>
+              <div class="author-name">Cattivali Pescados</div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="#d4af37">
+              <path
+                d="M10 1L12.5 6.5L18.5 7.5L14.25 11.5L15.25 17.5L10 14.75L4.75 17.5L5.75 11.5L1.5 7.5L7.5 6.5L10 1Z" />
+            </svg>
+          </div>
+
+          <p class="testimonial-text">"A consultoria chegou no momento certo!
+            Ajudou a organizar nossa operação, ajustar o
+            cardápio e melhorar os processos da cozinha.
+            A equipe aprendeu muito com os treinamentos."
+            — Débora Weber
+          </p>
+
+          <div class="testimonial-author">
+            <img src="img/duftebiergartes.jpeg" alt="Jorge Ferreira">
+            <div>
+              <div class="author-name">Dufte Biergarten</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2 class="contact-title">Vamos Conversar?</h2>
+          <p class="contact-subtitle">Entre em contato e descubra como a Gastrolab pode aumentar a rentabilidade do seu
+            negócio gastronômico.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+                    stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Telefone</div>
+                <a href="tel:+5551994530318" class="contact-value">(51) 99453-0318</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Horário</div>
+                <div class="contact-value">Segunda a sexta, 9h às 17h</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-cta-box">
+            <h3>Conversar Pelo WhatsApp</h3>
+            <p>Tem alguma dúvida ou quer saber mais sobre nossos serviços? Preencha o formulário ao Lado e fale conosco
+              pelo WhatsApp. Responderemos o mais rápido possível!</p>
+
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="sendWhatsApp(event)">
+          <div class="form-group">
+            <br><br>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-mensagem">Enviar Mensagem</button>
+        </form>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="img/logo2.png" alt="Gastrolab Logo" class="footer-logo">
+          <p class="footer-tagline">Transformando dados em resultados para o seu restaurante</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#home" class="nav-link">Início</a></li>
+        <li><a href="#team" class="nav-link">Equipe</a></li>
+        <li><a href="#services" class="nav-link">Soluções</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Serviços</h4>
+            <ul>
+              <li><a href="#services">Consultoria</a></li>
+              <li><a href="#services">Otimização</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contato</h4>
+            <ul>
+              <li><a href="tel:+5551994530318">(51) 99453-0318</a></li>
+              <li>Segunda a sexta</li>
+              <li>9h às 17h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Gastrolab. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
